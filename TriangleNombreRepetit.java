@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class TriangleNombreRepetit {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Pedir la cantidad de filas
+        System.out.print("Introduce la cantidad de filas: ");
+        int n = scanner.nextInt();
+
+        // Imprimir el triángulo
+        for (int fila = 1; fila <= n; fila++) {
+            for (int col = 1; col <= fila; col++) {
+                System.out.print(fila + " ");
+            }
+            System.out.println();
+        }
+
+        scanner.close();
+    }
+}
